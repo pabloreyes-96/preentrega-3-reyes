@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nombre": "viaje de larga distancia",
+        "precio": 15000
+    },
+    {
+        "id": 2,
+        "nombre": "viaje de media distancia",
+        "precio": 10000
+    },
+    {
+        "id": 3,
+        "nombre": "viaje de corta distancia",
+        "precio": 5000
+    }
+]

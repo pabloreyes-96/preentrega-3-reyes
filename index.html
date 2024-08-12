@@ -36,7 +36,7 @@
     >
 </head>
 <body>
-    <div class="container-form solicitar">
+    <div class="container-form solicitar" id="container">
         <div class="information">
             <d class="info-childs">
                 <h2>Bienvenido</h2>
@@ -45,28 +45,25 @@
         </div>
         <div class="form-information">
             <div class="form-information-childs">
-                <h2>Solicite su viaje</h2>
-                <p>Te damos la confianza de llegar siempre a tiempo! </p>
+                <h2>VIAJE SEGURO</h2>
+                <p> Complete el siguiente formulario para solicitar su viaje</p>
                 <form class="form form-solicitarViaje" novalidate>
                     <div>
                         <label>
-                            <input type="text" placeholder="Ingresu su Nombre" id="nombre" >
+                            <input type="text" placeholder="Ingresu su Nombre completo" id="nombre" >
                         </label>
                     </div>
                     <div>
                         <label >
-                            <input type="Ubicacion" placeholder="Ingrese su ubicacion" id="ubicacion" >
+                            <input type="text" placeholder="Ingrese un numero telefonico" id="celular" >
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="Destino" placeholder="ingrese el destino" id="destino">
+                            <input type="number" min=1 placeholder="Ingrese el cantidad de pasajero" id="pasajeros">
                         </label>
                     </div>
                     <div>
-                        <label>
-                            <input type="horario" placeholder="ingrese la hora " id="horario">
-                        </label>
                     </div>
                     <input type="submit" value="Enviar">
                     <div class="alerta-error">Todos los campos son obligatorios</div>
@@ -76,7 +73,19 @@
         </div>
     </div>
 
-<!--     <script src="js/main.js"></script> -->
+    <div id="tabla" class="hide2">
+        <table>
+            <thead>
+                <tr>
+                    <th>tipo de viaje</th>
+                    <th>precio</th>
+                </tr>
+            </thead>
+            <tbody id="testBody"></tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
     <script src="js/solicitar.js"></script>
 
   <!--   <div class="map_container">

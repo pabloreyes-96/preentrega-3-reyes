@@ -231,3 +231,7 @@ body {
 		border-top-right-radius: 0;
 	}
 }
+
+.hide2 {
+	display: none;
+}
